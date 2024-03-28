@@ -3,10 +3,10 @@
 @use "styles/utils";
 @import "styles/mixins";
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
 
 html {
-    font-family: "Rubik", sans-serif;
+    font-family: "Hanken Grotesk", sans-serif;
     font-optical-sizing: auto;
 }
 
@@ -27,7 +27,7 @@ html {
         border-bottom-right-radius: 32px;
 
         & .heading {
-            font-size: 1rem;
+            font-size: var(--body);
             color: var(--light-blue);
         }
     }
@@ -43,14 +43,14 @@ html {
             @include flex(column, center, space-evenly);
 
             &__number {
-                font-size: 3.5rem;
-                font-weight: 500;
+                font-size: var(--xlarge);
+                font-weight: 800;
                 color: var(--white);
             }
 
             &__bio {
                 color: var(--light-blue);
-                font-weight: bold;
+                font-weight: 500;
             }
         }
 
@@ -61,6 +61,7 @@ html {
             &__status {
                 color: var(--white);
                 font-size: var(--medium);
+                font-weight: 700;
             }
 
             &__description {
@@ -75,6 +76,10 @@ html {
     &__box:last-child {
         width: 100%;
         padding: 1.5rem 2rem;
+
+        & .heading {
+            font-size: var(--body);
+        }
 
         & .summary {
             margin: 1.5rem 0;
