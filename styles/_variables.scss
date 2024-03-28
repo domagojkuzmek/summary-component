@@ -1,0 +1,25 @@
+:root {
+    // Colors
+
+    --white: #FFFFFF;
+    --very-light-blue: #ECF2FF;
+    --light-blue: #CAC9FF;
+    --dark-navy: #303B59;
+    --red: #FF5555;
+    --red-95: hsl(0, 100%, 95%);
+    --green: #00BB8F;
+    --green-95: hsl(166, 100%, 95%);
+    --blue: #1125D6;
+    --blue-95: hsl(234, 85%, 95%);
+    --yellow: #FFB21E;
+    --yellow-95: hsl(39, 100%, 95%);
+    --gradient-1: linear-gradient(rgba(119, 85, 255, 1), rgba(47, 44, 233, 1));
+    --gradient-2: linear-gradient(rgba(77, 33, 201, 1), rgba(37, 33, 201, 0));
+
+    // Text styles
+    --xlarge: 4.5rem;
+    --large: 2rem;
+    --medium: 1.5rem;
+    --body: 1.125rem;
+}
+

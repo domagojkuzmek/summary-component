@@ -5,8 +5,76 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <title>Results summary component</title>
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <div class="container">
+    <div class="component">
+      <div class="component__box">
+        <h2 class="heading">Your Result</h2>
+        <div class="result">
+          <span class="result__number">76</span>
+          <span class="result__bio">of 100</span>
+        </div>
+        <div class="footer">
+          <p class="footer__status">Great</p>
+          <p class="footer__description">Your performance exceed 65% of the people conducting the test here!</p>
+        </div>
+      </div>
+      <div class="component__box">
+        <h2 class="heading">Summary</h2>
+        <div class="summary">
+          <!-- Element-->
+          <div class="summary__element reaction">
+            <div class="summary__element--category">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path stroke="#F55" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M10.833 8.333V2.5l-6.666 9.167h5V17.5l6.666-9.167h-5Z"/></svg>
+              <p>Reaction</p>
+            </div>
+            <div class="summary__element--score">
+              <p><span>80</span> / 100</p>
+            </div>
+          </div>
+
+          <!-- Element-->
+          <div class="summary__element memory">
+            <div class="summary__element--category">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path stroke="#F55" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M10.833 8.333V2.5l-6.666 9.167h5V17.5l6.666-9.167h-5Z"/></svg>
+              <p>Reaction</p>
+            </div>
+            <div class="summary__element--score">
+              <p><span>80</span> / 100</p>
+            </div>
+          </div>
+
+          <!-- Element-->
+          <div class="summary__element verbal">
+            <div class="summary__element--category">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path stroke="#F55" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M10.833 8.333V2.5l-6.666 9.167h5V17.5l6.666-9.167h-5Z"/></svg>
+              <p>Reaction</p>
+            </div>
+            <div class="summary__element--score">
+              <p><span>80</span> / 100</p>
+            </div>
+          </div>
+
+          <!-- Element-->
+          <div class="summary__element visual">
+            <div class="summary__element--category">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path stroke="#F55" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M10.833 8.333V2.5l-6.666 9.167h5V17.5l6.666-9.167h-5Z"/></svg>
+              <p>Reaction</p>
+            </div>
+            <div class="summary__element--score">
+              <p><span>80</span> / 100</p>
+            </div>
+          </div>
+
+        </div>
+        <button class="btn btn-primary">Continue</button>
+      </div>
+    </div>
+  </div>
 
 </body>
 </html>

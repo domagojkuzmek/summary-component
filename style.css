@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+:root {
+  --white: #FFFFFF;
+  --very-light-blue: #ECF2FF;
+  --light-blue: #CAC9FF;
+  --dark-navy: #303B59;
+  --red: #FF5555;
+  --red-95: hsl(0, 100%, 95%);
+  --green: #00BB8F;
+  --green-95: hsl(166, 100%, 95%);
+  --blue: #1125D6;
+  --blue-95: hsl(234, 85%, 95%);
+  --yellow: #FFB21E;
+  --yellow-95: hsl(39, 100%, 95%);
+  --gradient-1: linear-gradient(rgba(119, 85, 255, 1), rgba(47, 44, 233, 1));
+  --gradient-2: linear-gradient(rgba(77, 33, 201, 1), rgba(37, 33, 201, 0));
+  --xlarge: 4.5rem;
+  --large: 2rem;
+  --medium: 1.5rem;
+  --body: 1.125rem;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1.3;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.reaction {
+  color: var(--red);
+  background-color: var(--red-95);
+}
+
+.memory {
+  color: var(--yellow);
+  background-color: var(--yellow-95);
+}
+
+.verbal {
+  color: var(--green);
+  background-color: var(--green-95);
+}
+
+.visual {
+  color: var(--blue);
+  background-color: var(--blue-95);
+}
+
+html {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.container {
+  width: 100%;
+  height: 100dvh;
+}
+
+.component {
+  width: 100%;
+}
+.component__box:first-child {
+  background: var(--gradient-1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  border-bottom-left-radius: 32px;
+  border-bottom-right-radius: 32px;
+}
+.component__box:first-child .heading {
+  font-size: 1rem;
+  color: var(--light-blue);
+}
+.component__box {
+  padding: 1.5rem 0;
+}
+.component__box .result {
+  width: 8.75rem;
+  height: 8.75rem;
+  background: var(--gradient-2);
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.component__box .result__number {
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: var(--white);
+}
+.component__box .result__bio {
+  color: var(--light-blue);
+  font-weight: bold;
+}
+.component__box .footer {
+  width: 78%;
+  text-align: center;
+}
+.component__box .footer__status {
+  color: var(--white);
+  font-size: var(--medium);
+}
+.component__box .footer__description {
+  margin: 0.5rem 0 1rem;
+  color: var(--light-blue);
+}
+.component__box:last-child {
+  width: 100%;
+  padding: 1.5rem 2rem;
+}
+.component__box:last-child .summary {
+  margin: 1.5rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+.component__box:last-child .summary__element {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.125rem 1rem;
+  border-radius: 12px;
+}
+.component__box:last-child .summary__element--category {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+.component__box:last-child .summary__element--category p {
+  display: inline-block;
+}
+.component__box:last-child .summary__element--score {
+  color: var(--dark-navy);
+}
+.component__box:last-child .summary__element--score span {
+  font-weight: bold;
+}
+.component .btn {
+  display: block;
+  border: none;
+  width: 100%;
+  padding: 1rem 0;
+  border-radius: 5rem;
+  font-size: var(--body);
+  color: var(--white);
+  cursor: pointer;
+}
+.component .btn-primary {
+  background-color: var(--dark-navy);
+  transition: all 0.15s ease-in-out;
+}
+.component .btn-primary:hover {
+  background-color: rgb(77, 33, 201);
+}/*# sourceMappingURL=style.css.map */
