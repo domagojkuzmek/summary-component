@@ -113,8 +113,8 @@ html {
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
-  border-bottom-left-radius: 32px;
-  border-bottom-right-radius: 32px;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
 }
 .component__box:first-child .heading {
   font-size: var(--body);
@@ -212,4 +212,45 @@ html {
 }
 .component .btn-primary:hover {
   background-color: rgb(77, 33, 201);
+}
+
+@media only screen and (min-width: 640px) {
+  .container {
+    width: 85%;
+    margin-inline: auto;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  body {
+    background-color: var(--blue-95);
+  }
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .container .component {
+    background-color: var(--white);
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 32px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  .container .component__box:first-child {
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .container .component {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 1900px) {
+  .container .component {
+    width: 45%;
+  }
 }/*# sourceMappingURL=style.css.map */
